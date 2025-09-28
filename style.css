@@ -59,10 +59,25 @@ section:not(#hero) { background-color: var(--primary-color); }
 /* SKILLS AUTO-SCROLLER */
 #skills { padding-top: 6rem; padding-bottom: 6rem; }
 .scroller { max-width: 800px; margin: auto; overflow: hidden; -webkit-mask: linear-gradient(90deg, transparent, white 20%, white 80%, transparent); mask: linear-gradient(90deg, transparent, white 20%, white 80%, transparent); }
-.scroller-inner { display: flex; gap: 1.5rem; width: max-content; }
-.scroller[data-animated="true"] .scroller-inner { animation: scroll 30s linear infinite; }
-.skill-item { background: var(--bg-color); padding: 1rem 2rem; border-radius: 8px; font-weight: 600; white-space: nowrap; }
-@keyframes scroll { to { transform: translate(calc(-50% - 0.75rem)); } }
+.scroller-inner { display: flex; gap: 2.5rem; width: max-content; }
+.scroller[data-animated="true"] .scroller-inner { animation: scroll 40s linear infinite; }
+.skill-item {
+    background: var(--secondary-color);
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3rem;
+    color: var(--text-color);
+    transition: color 0.3s ease, background-color 0.3s ease;
+}
+.skill-item:hover {
+    color: var(--bg-color);
+    background-color: var(--accent-color);
+}
+@keyframes scroll { to { transform: translate(calc(-50% - 1.25rem)); } }
 
 /* PROJECTS SLIDER */
 .projects-carousel {
@@ -72,7 +87,7 @@ section:not(#hero) { background-color: var(--primary-color); }
 }
 
 .slider-container {
-    max-width: 900px;
+    max-width: 1000px;
     margin: auto;
     overflow: hidden;
     border-radius: 15px;
@@ -82,7 +97,7 @@ section:not(#hero) { background-color: var(--primary-color); }
 
 .slider-wrapper { display: flex; transition: transform 0.5s ease-in-out; }
 .project-slide { min-width: 100%; display: flex; align-items: center; gap: 2rem; padding: 2rem; }
-.project-image-container { flex: 1; }
+.project-image-container { flex: 1.5; }
 .project-image { width: 100%; border-radius: 10px; display: block; }
 .project-info { flex: 1; }
 .project-info h3 { color: var(--accent-color); margin-bottom: 1rem; }
@@ -91,8 +106,8 @@ section:not(#hero) { background-color: var(--primary-color); }
 .slider-btn { position: absolute; top: 50%; transform: translateY(-50%); background-color: rgba(255, 255, 255, 0.1); border: none; color: var(--accent-color); font-size: 2rem; padding: 0.5rem 1rem; border-radius: 5px; cursor: pointer; z-index: 10; transition: background-color 0.3s; }
 .slider-btn:hover { background-color: rgba(0, 245, 200, 0.2); }
 
-.slider-btn.prev { left: 0; }
-.slider-btn.next { right: 0; }
+.slider-btn.prev { left: -40px; }
+.slider-btn.next { right: -40px; }
 
 /* CONTACT & FOOTER */
 #contact { text-align: center; }

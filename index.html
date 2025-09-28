@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Michelle Hioe | Computer Science Student</title>
+    
+    <!-- Link to external stylesheet -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="main-header">
+        <nav class="container main-nav">
+            <a href="#hero" class="logo">MH.</a>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="hero">
+            <div class="container hero-content fade-in">
+                <h1>Michelle Hioe</h1>
+                <p class="subtitle">Aspiring SWE & Systems Enthusiast</p>
+                <p>I build elegant, responsive, and user-friendly full stack web apps that solve real-world problems.</p>
+                <a href="#projects" class="btn">View My Work</a>
+            </div>
+            <div class="wave-container">
+                <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+                    <defs><path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" /></defs>
+                    <g class="parallax">
+                        <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(31,31,31,0.7)" />
+                        <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(31,31,31,0.5)" />
+                        <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(31,31,31,0.3)" />
+                        <use xlink:href="#gentle-wave" x="48" y="7" fill="#1f1f1f" />
+                    </g>
+                </svg>
+            </div>
+        </section>
+
+        <section id="about" class="fade-in">
+            <div class="container">
+                <h2 class="section-title">About Me</h2>
+                <div class="about-content">
+                    <img src="https://i.pravatar.cc/250?img=32" alt="Michelle Hioe" class="about-image">
+                    <div class="about-text">
+                        <p>Hello! I'm Michelle, a computer science student based in Tangerang. With a background in CS, I have a keen eye for detail and a love for creating seamless user experiences.</p>
+			<p>When not coding webapps or mocking up design, I like to experiment with ML models on Kaggle datasets.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="fade-in">
+            <div class="container">
+                <h2 class="section-title">Tech Stack</h2>
+                <div class="scroller" data-animated="true">
+                    <div class="scroller-inner">
+                        <div class="skill-item">HTML/CSS/JS</div>
+                        <div class="skill-item">React</div>
+                        <div class="skill-item">Node.js</div>
+                        <div class="skill-item">Python</div>
+                        <div class="skill-item">TypeScript</div>
+                        <div class="skill-item">REST APIs</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="fade-in">
+            <div class="container">
+                <h2 class="section-title">Featured Projects</h2>
+                <div class="projects-carousel">
+                    <div class="slider-container">
+                        <div class="slider-wrapper">
+                            <!-- Slide 1 -->
+                            <div class="project-slide">
+                                <div class="project-image-container"><img src="https://via.placeholder.com/800x600/00f5c8/121212?text=Project+Demo+GIF" alt="Project One Demo" class="project-image"></div>
+                                <div class="project-info"><h3>Online Portfolio</h3><p>A dead simple and hassle free online portfolio in HTML/CSS/JS for showing off my work and centralizing my professional online presence. The live demo is the website you're browsing right now!</p><a href="#" class="btn" target="_blank">View on GitHub</a></div>
+                            </div>
+                            <!-- Slide 2 -->
+                            <div class="project-slide">
+                                <div class="project-image-container"><img src="https://via.placeholder.com/800x600/00f5c8/121212?text=Project+Demo+GIF" alt="Project Two Demo" class="project-image"></div>
+                                <div class="project-info"><h3>Heart Attack Dashboard</h3><p>A sleek frontend made with React, Node.js and MUI for an inhouse ML model that predicts the likelihood of heart attack based on user health input. Made as a group uni project.</p><a href="https://github.com/MichyMachy/my-cardio-view" class="btn" target="_blank">View on GitHub</a></div>
+                            </div>
+                            <!-- Slide 3 -->
+                            <div class="project-slide">
+                                <div class="project-image-container"><img src="https://via.placeholder.com/800x600/00f5c8/121212?text=Project+Demo+GIF" alt="Project Three Demo" class="project-image"></div>
+                            <div class="project-info"><h3>Spam Detector Extension</h3><p>An intuitive browser extension that takes text as input and outputs a prediction, whether the text is likely to be spam or not. The model was trained on spam emails, made as a group university project.</p><a href="#" class="btn" target="_blank">View on GitHub</a></div> 
+                            </div>
+                        </div>
+                    </div>
+
+                    <button class="slider-btn prev">&#10094;</button>
+                    <button class="slider-btn next">&#10095;</button>
+                </div>
+        </section>
+
+        <section id="contact" class="fade-in">
+            <div class="container">
+                <h2 class="section-title">Get In Touch</h2>
+                <p>I'm currently open to new opportunities and collaborations. If you have a project in mind or just want to say hello, feel free to reach out!</p>
+<ul class="contact-socials">
+    <li>
+        <a href="mailto:michelle.hioe.job@gmail.com" target="_blank" aria-label="Email">
+            <i class="fas fa-envelope"></i>
+        </a>
+    </li>
+    <li>
+        <a href="https://www.linkedin.com/in/michelle-hioe/" target="_blank" aria-label="LinkedIn Profile">
+            <i class="fab fa-linkedin"></i>
+        </a>
+    </li>
+    <li>
+        <a href="https://github.com/MichyMachy" target="_blank" aria-label="GitHub Profile">
+            <i class="fab fa-github"></i>
+        </a>
+            <li>
+        <a href="https://www.kaggle.com/michmach" target="_blank" aria-label="Kaggle Profile">
+            <i class="fab fa-kaggle"></i>
+        </a>
+    </li>
+    </li>
+</ul>
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <div class="container"><p>&copy; 2024 Michelle Hioe. All Rights Reserved.</p></div>
+    </footer>
+
+    <!-- Link to external JS -->
+    <script src="script.js" defer></script>
+</body>
+</html>
